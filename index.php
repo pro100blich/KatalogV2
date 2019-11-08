@@ -15,11 +15,19 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
 
   </head>
 <body>
+  <style type="text/css">
+    fieldset{
+      padding: 2em;
+      margin: 1em 0;
+      background-color: #F7F7F9;
+    }
+
+  </style>
   <div class="contener">
     <div class="col">
       <form class="form-horizontal" enctype='multipart/form-data'  action='' method='POST'>
         <fieldset>
-          <legend>Инициалы</legend>
+          <h3>Инициалы</h3>
           <div class="form-row">
             <div class="col">
               <input type="text" class="form-control" id="inputText" name="surname" placeholder="Фамилия">
@@ -33,7 +41,7 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
           </div>
         </fieldset>
         <fieldset>
-          <legend>Фамилия, имя на английском</legend>
+          <h3>Фамилия, имя на английском как в загранпаспорте</h3>
           <div class="row">
             <div class="col">
               <input type="text" class="form-control" id="inputText" name="english_surname" placeholder="Surname">
@@ -45,7 +53,6 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
             </div>
           </div>
         </fieldset>
-        <fieldset>
           <div class="row">
             <div class="col">
               <b>Дата рождения</b>
@@ -60,9 +67,8 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
               <input type="email" class="form-control" id="inputText" name="email" placeholder="E-mail" >
             </div>
           </div>
-        </fieldset>
-        <fieldset>
-          <legend>Паспортные данные</legend>
+          <fieldset>
+          <h3>Паспортные данные Российского паспорта</h3>
           <div class="form-group row">
             <div class="col">
               &nbsp;
@@ -91,6 +97,17 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
             </div>
           </div>
         </fieldset>
+        <div class="form-row form-group">
+          <div class="col">
+            Ваше место положения
+            <select name="education" class="form-control">
+            <option value=""></option>
+            <option value="Владивосток">Владивосток</option>
+            <option value="Артем">Артем</option>
+            <option value="Находка">Находка</option>
+            </select>
+          </div>
+        </div>
         <div class="form-group form-row">
           <div class="col">
             <b>Образование</b>
@@ -157,13 +174,12 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
           </div>
         </div>
         <fieldset>
-          <legend>Программа дополнительного профисионального оброзования</legend>
+          <h3>Программа дополнительного профисионального оброзования</h3>
          <!-- <div id="profile">-->
             <div class="form-group row">
               <div class="col">
-                <div class="">
-                  <select class="form-control" name="test">
-                    <option disabled selected></option>
+                <div class="box-select">
+                  <select class="select form-control" name="test">
                     <option data-price="100" value="Подготовка по оказанию первой помощи">Подготовка по оказанию первой помощи</option>
                     <option data-price="200" value="Начальная подготовка для работы на нефтяных танкерах и танкерах-химовозах">Начальная подготовка для работы на нефтяных танкерах и танкерах-химовозах</option>
                     <option data-price="300" value="Оказание первой медицинской помощи и медицинский уход">Оказание первой медицинской помощи и медицинский уход</option>
@@ -184,6 +200,12 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
                     <option data-price="300" value="Начальная подготовка для работы на нефтяных танкерах и танкерах-химовозах (подготовка)">Начальная подготовка для работы на нефтяных танкерах и танкерах-химовозах (подготовка)</option>
                     <option data-price="300" value="Начальная подготвка по безопасности (подготовка)">Начальная подготвка по безопасности (подготовка)</option>
                   </select>
+                <div class="bg-danger" id="leftFit">Сумма: <span class="summ">0</span> руб.</div >
+               <div class="bg-warning">Было выбрано:</div>
+                <div class="list bg-warning"></div>
+                </div>
+              </div>
+            </div>
                 <!--  <div class="bg-danger">Сумма: <span class="summ">0</span> руб.</div>
                 </div>
               </div>
@@ -221,7 +243,7 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
         -->
         </fieldset>
         <fieldset>
-          <legend>Программы дополнительного профессионального образования по охране труда</legend>
+          <h3>Программы дополнительного профессионального образования по охране труда</h3>
           <div class="form-group row">
             <div class="col">
               <div class="box-select">
@@ -268,7 +290,7 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
         -->
           </fieldset>
           <fieldset>
-            <legend>Программы дополнительного профессионального образования по транспортной безопасности</legend>
+            <h3>Программы дополнительного профессионального образования по транспортной безопасности</h3>
             <div class="form-group row">
               <div class="col">
               <div class="box-select">
@@ -314,7 +336,7 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
           -->
         </fieldset>
         <fieldset>
-          <legend>Основная программа</legend>
+          <h3>Основная программа</h3>
           <div class="form-group">
             <div class="col-xs-12">
             <div class="box-select">
@@ -371,10 +393,9 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
 			     <input type="date" class="form-control" value="<? echo $date_day?>" min="<? echo $date_day?>">
           </div>
           <div class="col-md-1">
-
           </div>
           <div class="col-md-3">
-            <b>Дата начало обучения</b>
+            <b>Дата предварительного посещения</b>
             <input type="date" class="form-control" value="<? echo $date_day?>" min="<? echo $date_day?>">
           </div>
         </div>
