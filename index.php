@@ -200,7 +200,7 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
                     <option data-price="300" value="Начальная подготовка для работы на нефтяных танкерах и танкерах-химовозах (подготовка)">Начальная подготовка для работы на нефтяных танкерах и танкерах-химовозах (подготовка)</option>
                     <option data-price="300" value="Начальная подготвка по безопасности (подготовка)">Начальная подготвка по безопасности (подготовка)</option>
                   </select>
-                <div class="bg-danger" id="leftFit">Сумма: <span class="summ">0</span> руб.</div >
+                <div class="bg-danger">Сумма: <span class="summ">0</span> руб.</div >
                <div class="bg-warning">Было выбрано:</div>
                 <div class="list bg-warning"></div>
                 </div>
