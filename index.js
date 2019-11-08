@@ -11,6 +11,7 @@ var divsToHide = document.getElementsByClassName("bg-danger"); //divsToHide is a
     });
 })();
 function calc(e) {
+
     let target = e.target.selectedOptions[0];
     if (target.parentElement.classList.contains('select')) {
         let summ = this.parentElement.querySelector('.summ');
@@ -36,7 +37,7 @@ function del(e) {
 }
 
 function total() {
-    document.querySelector('.total_span').textContent = [...document.querySelectorAll('.summ')].map(e => +e.textContent).reduce((a,b) => a + b);
+    document.querySelector('.total_span').textContent = [...document.querySelectorAll('.summ')].map(e => +e.textContent).reduce((a,b) => a + b)*110/100 ;
 }
 
 document.querySelectorAll('.box-select .select').forEach(e => e.addEventListener('change', calc) );
