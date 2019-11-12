@@ -10,8 +10,8 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Bootstrap DaeteTimePicker</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   </head>
 <body>
@@ -21,7 +21,9 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
       margin: 1em 0;
       background-color: #F7F7F9;
     }
-
+.custom-file-input ~ .custom-file-label::after {
+    content: "Нажмите чтобы загрузить изображения";
+}
   </style>
   <div class="contener">
     <div class="col">
@@ -173,6 +175,175 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
           </select>
           </div>
         </div>
+        <fieldset>
+        <h3>Загрузка документов</h3>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="validatedvalidatedCustomFile" name="passport_facial">
+            <label class="custom-file-label" for="validatedvalidatedCustomFile">Паспорт лицевая</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='passport_registration'  required>
+            <label class="custom-file-label" for="validatedCustomFile">Паспорт прописка</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='international_passport_data' >
+            <label class="custom-file-label" for="validatedCustomFile">Загранпаспорт лицевая</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='marigold_book1' >
+            <label class="custom-file-label" for="validatedCustomFile">Мариходная книжка ст 1</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='marigold_book2' >
+            <label class="custom-file-label" for="validatedCustomFile">Мариходная книжка ст 2</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='marigold_book3' >
+            <label class="custom-file-label" for="validatedCustomFile">Мариходная книжка ст 3</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='marigold_book4' >
+            <label class="custom-file-label" for="validatedCustomFile">Мариходная книжка ст 4</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='marigold_book5' >
+            <label class="custom-file-label" for="validatedCustomFile">Мариходная книжка ст 5</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='certificate_of_good_conduct' >
+            <label class="custom-file-label" for="validatedCustomFile">Справка о несудимости</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='pzm' >
+            <label class="custom-file-label" for="validatedCustomFile">ПЗМ</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='acb_2' >
+            <label class="custom-file-label" for="validatedCustomFile">АСВ-2</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='otpz' >
+            <label class="custom-file-label" for="validatedCustomFile">Охрана труда и проверка знайний</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='transport_safety' >
+            <label class="custom-file-label" for="validatedCustomFile">Транспортная безопасность</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='bzhs' >
+            <label class="custom-file-label" for="validatedCustomFile">БЖС</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='osps' >
+            <label class="custom-file-label" for="validatedCustomFile">ОСПС</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='special_boats_specialist' >
+            <label class="custom-file-label" for="validatedCustomFile">Специалист по специальным шлюпкам</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='bspprp' >
+            <label class="custom-file-label" for="validatedCustomFile">борьба с пажаром по расширенной программе</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='first_aid_service' >
+            <label class="custom-file-label" for="validatedCustomFile">Оказание первой медецинской помощи</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='first_aid_service_care' >
+            <label class="custom-file-label" for="validatedCustomFile">Оказание первой медецинской помощи и медицинский уход</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='initial_training_chemical_tankers' >
+            <label class="custom-file-label" for="validatedCustomFile">Начальная подготовка для работы на нефтяных танкерах и танкерах-химовозах</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='initial_training_gas_tankers' >
+            <label class="custom-file-label" for="validatedCustomFile">Начальная подготовка для работы ны танкерах-газовозах</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='advanced_training_on_oil_tankers' >
+            <label class="custom-file-label" for="validatedCustomFile">Подготовка по расширенной программе на нефтяных танкерах</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='advanced_training_chemical_carriers'>
+            <label class="custom-file-label" for="validatedCustomFile">Подготовка по расширенной программе на нефтяных химовозах</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='advanced_training_gas_carriers' >
+            <label class="custom-file-label" for="validatedCustomFile">Подготовка по расширенной программе на нефтяных газовозах</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='transportation_of_hazardous_substances' >
+            <label class="custom-file-label" for="validatedCustomFile">Перевозка опасных веществ на судах</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='dangerous_goods_transportation' >
+            <label class="custom-file-label" for="validatedCustomFile">Транспортировка опасных грузов</label>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="custom-file">
+            <input type='file' class="custom-file-input" id="validatedCustomFile" name='small_boat_master_mchs'>
+            <label class="custom-file-label" for="validatedCustomFile">Судоводитель маломерных судов, поднадзорных ГИМС МЧС России</label>
+          </div>
+        </div>
+        </fieldset>
+
+
+
+
         <fieldset>
           <h3>Программа дополнительного профисионального оброзования</h3>
          <!-- <div id="profile">-->
@@ -419,10 +590,20 @@ $date_day = $date->format('Y-m-d'); // формат даты 2019-11-01
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<script type="text/javascript">
+ $('.custom-file input').change(function (e) {
+        var files = [];
+        for (var i = 0; i < $(this)[0].files.length; i++) {
+            files.push($(this)[0].files[i].name);
+        }
+        $(this).next('.custom-file-label').html(files.join(', '));
+    });
+
+</script>
 
 
-
- <!-- <script type="text/javascript">
+ <!--
+ <script type="text/javascript">
         $(function () {
   $('#datetimepicker1').datetimepicker({
   format: 'DD.MM.YYYY',

@@ -1,3 +1,6 @@
 .close{
 	cursor: pointer;
 }
+.custom-file-input ~ .custom-file-label::after {
+    content: "ш8нгir";
+}
